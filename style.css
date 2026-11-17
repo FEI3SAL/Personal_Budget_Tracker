@@ -1,13 +1,21 @@
-/* General Page Styling */
+/* General Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f4f7;
-    margin: 0;
-    padding: 0;
     color: #333;
+    line-height: 1.6;
 }
 
-/* ID Selector */
+
+/* Header Styling - ID Selector */
+
 #main-header {
     background-color: #173b57;
     color: white;
@@ -19,55 +27,177 @@ body {
     margin-bottom: 10px;
 }
 
+
 /* Main Content */
+
 main {
-    width: 80%;
-    max-width: 700px;
+    width: 85%;
+    max-width: 900px;
     margin: 30px auto;
 }
 
-/* Class Selector: Add Expense */
-.expense-section {
+
+/* Add Expense Section */
+
+.add-expense-section {
     background-color: white;
     padding: 25px;
     margin-bottom: 25px;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.expense-section h2 {
+.add-expense-section h2 {
     color: #173b57;
+    margin-bottom: 15px;
 }
+
+
+/* Direct Child Selector */
+
+.add-expense-section > form {
+    display: flex;
+    flex-direction: column;
+}
+
 
 /* Input Styling */
-input, select {
-    display: block;
-    width: 100%;
+
+input:not([type="submit"]),
+select {
     padding: 12px;
-    margin-top: 8px;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box;
+    width: 100%;
 }
 
+
+/* Focus Pseudo-class */
+
+input:focus,
+select:focus {
+    outline: none;
+    border: 2px solid #173b57;
+}
+
+
 /* Button Styling */
+
 button {
     background-color: #173b57;
     color: white;
-    padding: 12px 20px;
+    padding: 12px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-/* Class Selector: Your Expenses */
-.expenses-list {
-    background-color: #e1f0e8;
+button:hover {
+    background-color: #28648c;
+}
+
+
+/* Expenses Section */
+
+.expenses-section {
+    background-color: white;
     padding: 25px;
+    margin-bottom: 25px;
     border-radius: 8px;
 }
 
-.expenses-list h2 {
-    color: #236b45;
+.expenses-section h2 {
+    color: #173b57;
+    margin-bottom: 15px;
+}
+
+
+/* Table Styling */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+
+/* Table Header */
+
+thead {
+    background-color: #173b57;
+    color: white;
+}
+
+
+/* Alternating Row Colors */
+
+tr:nth-child(even) {
+    background-color: #e8eef3;
+}
+
+
+/* Table Hover Effect */
+
+tbody tr:hover {
+    background-color: #c9e5d5;
+}
+
+
+/* Descendant Selector */
+
+.expenses-section td {
+    font-size: 14px;
+}
+
+
+/* Instructions Section */
+
+.instructions {
+    background-color: #e1f0e8;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/* Multimedia Section */
+
+.multimedia {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.multimedia img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.multimedia iframe {
+    max-width: 100%;
+    margin-top: 15px;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #173b57;
+    color: white;
+    text-align: center;
+    padding: 20px;
 }

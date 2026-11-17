@@ -1,0 +1,48 @@
+# Personal Budget & Expense Tracker
+
+## Introduction
+
+This is a Personal Budget and Expense Tracker
+developed as part of my Power Learn Project (PLP)
+web development training.
+
+The project is designed to help users organize
+and monitor their daily expenses.
+
+## Technologies Used
+
+- HTML5
+- CSS3
+
+## Project Features
+
+1. Expense entry form.
+2. Expense name input.
+3. Amount input.
+4. Category selection.
+5. Expense table.
+6. Sample expense records.
+7. Collapsible usage instructions.
+8. Multimedia content.
+9. Responsive styling.
+
+## Project Files
+
+- index.html - Contains the structure of the website.
+- style.css - Controls the appearance and layout.
+- README.md - Provides information about the project.
+
+## Learning Objectives
+
+Through this project, I practiced:
+
+- HTML table structures.
+- HTML forms and input elements.
+- Multimedia integration.
+- CSS selectors.
+- CSS pseudo-classes.
+- Browser development tools.
+
+## Author
+
+Developed as part of PLP Web Development Training.

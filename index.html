@@ -1,64 +1,167 @@
-\<!-- Personal Budget & Expense Tracker -->
+<!DOCTYPE html>
+<html lang="en">
 
-\<!-- Created as part of PLP Week 1 assignment -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-\<!DOCTYPE html>
+    <title>Personal Budget & Expense Tracker</title>
 
-\<html lang="en"> \<head>     \<meta charset="UTF-8">     \<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-```
-<title>My Budget Tracker</title>
+<body>
 
-<!-- Linking CSS file -->
-<link rel="stylesheet" href="style.css">
-```
+    <!-- Header Section -->
+    <header id="main-header">
+        <h1>My Budget Tracker</h1>
+        <p>Track your income and expenses in one place.</p>
+    </header>
 
-\</head>
+    <main>
 
-\<body>
+        <!-- Add Expense Section -->
+        <section class="add-expense-section">
 
-```
-<!-- Main Heading -->
-<header id="main-header">
-    <h1>My Budget Tracker</h1>
-    <p>Track your income and expenses in one place.</p>
-</header>
+            <h2>Add Expense</h2>
 
-<main>
+            <form action="#" method="post">
 
-    <!-- Add Expense Section -->
-    <section class="expense-section">
-        <h2>Add Expense</h2>
+                <label for="expense-name">Expense Name:</label>
+                <input type="text" id="expense-name"
+                    name="expense-name"
+                    placeholder="Enter expense name" required>
 
-        <label for="expense-name">Expense Name:</label>
-        <input type="text" id="expense-name"
-               placeholder="Enter expense name">
+                <label for="amount">Amount (KES):</label>
+                <input type="number" id="amount"
+                    name="amount"
+                    placeholder="Enter amount" required>
 
-        <label for="amount">Amount (KES):</label>
-        <input type="number" id="amount"
-               placeholder="Enter amount">
+                <label for="category">Category:</label>
 
-        <label for="category">Category:</label>
-        <select id="category">
-            <option value="">Select category</option>
-            <option value="food">Food</option>
-            <option value="transport">Transport</option>
-            <option value="education">Education</option>
-            <option value="shopping">Shopping</option>
-            <option value="other">Other</option>
-        </select>
+                <select id="category" name="category" required>
+                    <option value="">Select Category</option>
+                    <option value="food">Food</option>
+                    <option value="transport">Transport</option>
+                    <option value="education">Education</option>
+                    <option value="shopping">Shopping</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="other">Other</option>
+                </select>
 
-        <button type="button">Add Expense</button>
-    </section>
+                <button type="submit">Add Expense</button>
 
-    <!-- Your Expenses Section -->
-    <section class="expenses-list">
-        <h2>Your Expenses</h2>
+            </form>
 
-        <p>No expenses yet. Add your first expense above.</p>
-    </section>
+        </section>
 
-</main>
-```
 
-\</body> \</html>
+        <!-- Your Expenses Section -->
+        <section class="expenses-section">
+
+            <h2>Your Expenses</h2>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Amount (KES)</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    <tr>
+                        <td>Lunch</td>
+                        <td>250</td>
+                        <td>Food</td>
+                        <td>2026-11-10</td>
+                    </tr>
+
+                    <tr>
+                        <td>Transport</td>
+                        <td>150</td>
+                        <td>Transport</td>
+                        <td>2026-11-11</td>
+                    </tr>
+
+                    <tr>
+                        <td>Internet Bundle</td>
+                        <td>200</td>
+                        <td>Communication</td>
+                        <td>2026-11-12</td>
+                    </tr>
+
+                    <tr>
+                        <td>Exercise Books</td>
+                        <td>350</td>
+                        <td>Education</td>
+                        <td>2026-11-13</td>
+                    </tr>
+
+                    <tr>
+                        <td>Shopping</td>
+                        <td>500</td>
+                        <td>Shopping</td>
+                        <td>2026-11-14</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <!-- How to Use Section -->
+        <section class="instructions">
+
+            <details>
+                <summary>How to Use This Budget Tracker</summary>
+
+                <p>
+                    Enter the name of your expense, amount and category
+                    using the form above. The expense table displays
+                    sample records of expenses.
+                </p>
+
+            </details>
+
+        </section>
+
+
+        <!-- Multimedia Section -->
+        <section class="multimedia">
+
+            <h2>Budget Planning</h2>
+
+            <img
+                src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800"
+                alt="Financial planning and budget analysis on a computer"
+                width="500"
+                loading="lazy">
+
+            <h3>Learn About Budget Management</h3>
+
+            <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ"
+                title="Budget Tracker Learning Video"
+                loading="lazy"
+                allowfullscreen>
+            </iframe>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Personal Budget & Expense Tracker | 2026</p>
+    </footer>
+
+</body>
+</html>
